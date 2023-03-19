@@ -2,16 +2,14 @@ package com.api.parkingcontrol.models;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "TB_PARKING_SPOT")
 public class ParkingSpotModel implements Serializable {
